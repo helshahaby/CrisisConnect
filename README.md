@@ -1,78 +1,45 @@
-# ClaimRadar
+# CrisisConnect AI
 
-ClaimRadar is a voice-first opportunity intelligence agent for students, job seekers, researchers, founders, and builders.
+Offline-first crisis assistant for humanitarian workers and people in emergency situations.
 
-It helps users discover time-sensitive opportunities such as hackathons, internships, grants, scholarships, startup programs, certification vouchers, fellowships, and research calls. The agent searches the live web, verifies source details, ranks results by fit and urgency, and prepares the next action.
+## Links
 
-## Short Description
-
-ClaimRadar is a voice-first opportunity radar that helps users find verified hackathons, internships, grants, fellowships, and scholarships, then ranks each result and prepares the next action before deadlines disappear.
-
-## Demo
-
-- Lovable app: https://ai-palette-chooser.lovable.app/
+- Live app: https://crisis-offline-connect.lovable.app/
 - Demo video: https://www.youtube.com/watch?v=ns6HmOkDJHU
 
-## Problem
+## Overview
 
-Good opportunities are scattered across event pages, job boards, university pages, PDFs, newsletters, and social posts. People often miss deadlines because discovery, verification, and application preparation are manual.
+CrisisConnect AI helps users prepare trusted humanitarian information before field use, then use that cached information when internet access is weak or unavailable. The app supports voice questions, same-language responses, cached source citations, emergency-number guidance, and offline facility lists.
 
-## Solution
+## Key Features
 
-ClaimRadar lets the user speak or type a goal. The agent then searches live sources, extracts key details, scores each opportunity, and creates an action plan.
+- Prepare an offline pack from trusted sources such as Red Cross, IFRC, ICRC, WHO, UNHCR, and local emergency pages.
+- Cache documents, source metadata, maps or facility records, emergency contacts, and local guidance for offline use.
+- Ask questions by voice or text during a crisis.
+- Answer from cached sources with citations.
+- Detect country or region and show the relevant emergency number, such as 112 in Sweden/EU or 911 in the US.
+- Provide fallback guidance when phone or internet service is down.
+- Support Arabic, English, French, German, Swedish, and Spanish.
+- Show nearby facilities such as shelters, clinics, hospitals, registration desks, and Red Cross or NGO offices.
+- Support light and dark modes and mobile layouts.
 
-Example prompt:
+## Example Use Case
 
-```text
-Find AI, robotics, automotive, and hackathon opportunities in Sweden, Europe, or online this month.
-```
+A field worker prepares the app while online by selecting a country and caching trusted sources. Later, in a low-connectivity area, the worker asks:
 
-## Main Features
+> I am injured and I have no internet. What should I do?
 
-- Professional voice-agent interface
-- Mic, mute, captions, and transcript controls
-- Secure setup for Nebius Token Factory, Tavily, and ElevenLabs API keys
-- Live opportunity search and extraction
-- Fit, urgency, impact, effort, and confidence scoring
-- Saved opportunities and application status tracking
-- Call history with transcripts and follow-up tasks
-- Draft email and draft application answer actions
+The app responds with immediate safety steps, the local emergency number, offline fallback actions, nearby cached facilities, and citations from stored sources.
 
-## Technology Plan
+## Safety Approach
 
-| Service              | Role                                                                |
-| -------------------- | ------------------------------------------------------------------- |
-| Tavily               | Live search, extraction, crawling, and source verification          |
-| Nebius Token Factory | Open-model reasoning, ranking, summarization, scoring, and drafting |
-| ElevenLabs           | Professional voice-agent interaction                                |
+CrisisConnect AI follows a do-no-harm design:
 
-## Demo Profile
+- It does not invent medical, legal, shelter, or protection rules.
+- It tells the user when cached sources do not cover the question.
+- It recommends escalation to trained responders or qualified humanitarian staff for high-risk cases.
+- It keeps local facility and emergency-number information available offline after preparation.
 
-Name: Hossam Elshahaby  
-Location: Gothenburg, Sweden  
-Background: Electrical and Software Engineer with embedded systems, automotive, robotics, AI, C/C++, Python, ADAS, AUTOSAR, ISO 26262, and hackathon experience.
+## Project By
 
-## Opportunity Scoring
-
-Each opportunity receives:
-
-- Fit score from 0 to 100
-- Urgency score from 0 to 100
-- Impact score from 0 to 100
-- Effort level: Low, Medium, or High
-- Confidence level: Low, Medium, or High
-
-## Impact
-
-ClaimRadar helps people act on opportunities before deadlines disappear. It is especially useful for students, immigrants, researchers, and builders who do not already have strong networks or dedicated opportunity scouts.
-
-## Business Model
-
-- Free personal search
-- Pro monitoring and application support
-- University and career-center dashboards
-- Community and accelerator opportunity intelligence
-
-## Status
-
-Prototype prepared for the Builders & Brews / Nebius + Tavily AI builder event.
+Hossam Elshahaby
